@@ -38,17 +38,15 @@ html {
 .content header img {
   width: 16.7rem;
   margin: 3.5rem auto;
+  margin-left: 16rem;
 }
-
-
-
 
 
 
 /* base */
 body {
+  display: flex;
   height: 100vh;
-  width: 100vw;
   background: var(--background);
 }
 
