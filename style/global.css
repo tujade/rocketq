@@ -20,13 +20,30 @@ html {
   --overlay: #040911;
   --icons-details: #36BB2B;
 
-  --grey-dark: #4D5E77;
-  --grey-blue: #A1B2CD;
-  --grey-light: #E5EAF1;
+  --outline-dark: #4D5E77;
+  --outline-blue: #A1B2CD;
+  --outline-light: #E5EAF1;
+
+
 
   /* 1rem = 16px (User Agent) = 100% (User Agent) */
   font-size: 62.5%; /* 10px */
 }
+
+/* cabeçalho */
+.content header {
+  width: 80%;
+}
+
+.content header img {
+  width: 16.7rem;
+  margin: 3.5rem auto;
+}
+
+
+
+
+
 
 /* base */
 body {
@@ -61,4 +78,44 @@ body, button, input, textarea {
   clip-path: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+/* input e button */
+input, button, .button {
+  border-radius: 0.8rem;
+  height: 5rem;
+}
+
+button, .button{
+  font-family: 'Poppins';
+  font-weight: 500;
+  line-height: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--base-light);
+  color: var(--text-color);
+
+  transition: filter .2s;
+
+  cursor: pointer;
+}
+
+button:hover, .button:hover{
+  filter: brightness(1.2);
+}
+
+button > img,
+.button > img {
+  margin-right: 1rem;
+  width: 2rem;
+}
+
+button.outlined,
+.button.outlined {
+  background: var(--white);
+  color: var(--text-color);
+  border: 2px solid var(--base-light);
 }
