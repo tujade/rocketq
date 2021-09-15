@@ -1,4 +1,4 @@
-/* base - Ornaização Tags na página */
+/* base - organization tags on screen */
 .content {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -10,7 +10,7 @@
 
 }
 
-/*cabeçalho*/
+/*header  */
 header {
   grid-area: header;
 }
@@ -24,7 +24,7 @@ header {
   background-position-x: -10rem;
 }
 
-/*página principal - home */
+/*principal page - home */
 main {
   grid-area: right;
   
@@ -44,7 +44,7 @@ main h2 {
   margin-bottom: 2.4rem;
 }
 
-/* input e botão*/
+/* input and botão*/
 input {
   border: 0.2rem solid var(--outline-blue);
   padding: 0 1.6rem;
@@ -80,7 +80,7 @@ input, button, .button {
     height: 1px;
 }
 
-/*create ball decoration backgroun*/
+/*create decoration ball background*/
 
 .ball{
   width: 21.2rem;
