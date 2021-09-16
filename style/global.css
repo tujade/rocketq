@@ -22,7 +22,10 @@ html {
 
   --outline-dark: #4D5E77;
   --outline-blue: #A1B2CD;
-  --outline-light: #E5EAF1;
+  --outline-light: #E0ECFF;
+
+  --opacity: #eaecf2;
+  --bg-modal: rgba(4, 9, 17, .8);
 
 
 
@@ -41,6 +44,10 @@ html {
   margin-left: 16rem;
 }
 
+.content{
+  width: 100%;
+  margin: 0 auto;
+}
 
 
 /* base principal page*/
@@ -59,10 +66,7 @@ body, button, input, textarea {
   /*font-family: 'Poppins, sans-serif';*/
 }
 
-.content{
-  width: 100%;
-  margin: 0 auto;
-}
+
 
 
 /*screen only (acessibility) */
@@ -77,6 +81,7 @@ body, button, input, textarea {
   white-space: nowrap;
   border-width: 0;
 }
+
 
 /* input and button */
 input, button, .button{
@@ -118,3 +123,17 @@ button.outlined,
   color: var(--text-color);
   border: 2px solid var(--base-light);
 }
+
+button.red,
+.button.red {
+  background: var(--danger);
+  color: var(--white);
+
+}
+
+button.grey,
+.button.grey {
+  background: var(--outline-light);
+  color: var(--outline-dark);
+}
+
