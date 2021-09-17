@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="style/global.css">
   <link rel="stylesheet" href="style/room.css">
   <link rel="stylesheet" href="style/modal.css">
+
+   <!-- scripts -->
+   <script src="scripts/main.js" defer type="module"></script>
+
   </head>
 
   <body>
@@ -25,7 +29,7 @@
               <img style="margin: 3.5rem 0" src="images/logo.svg" alt="Logo da aplicação">
           </a>
           <div class="buttons">
-                <div class="button outlined">
+                <div class="button outlined" id= "room-id" data-id="323243">
                     #323243
                     <img src="images/copy.svg" alt="Copiar número da sala">
                 </div>
@@ -34,6 +38,7 @@
                     Criar Sala
                     <img src="images/users1.svg" alt="Copiar número da sala">
                   </a>
+                </div>
           </div>
         </header>  
 
@@ -73,11 +78,11 @@
                             </div>
                         </div>
                         <div class="actions">
-                            <a href="#" class="check" >
+                            <a href="#" class="check" data-id="2">
                               <img src="/images/check.svg" alt="Marcar como lida">
                               Marcar como lida
                             </a>
-                            <a href="#" class="delete">
+                            <a href="#" class="delete"data-id="2">
                               <img src="/images/trash.svg" alt="Excluir">
                               Excluir
                             </a>
@@ -95,11 +100,11 @@
                           </div>
                       </div>
                       <div class="actions">
-                          <a href="#" class="check" >
+                          <a href="#" class="check" data-id="3">
                             <img src="/images/check.svg" alt="Marcar como lida">
                             Marcar como lida
                           </a>
-                          <a href="#" class="delete">
+                          <a href="#" class="delete" data-id="3">
                             <img src="/images/trash.svg" alt="Excluir">
                             Excluir
                           </a>
@@ -117,11 +122,11 @@
                         </div>
                     </div>
                     <div class="actions">
-                        <a href="#" class="check" >
+                        <a href="#" class="check" data-id="4">
                           <img src="/images/check.svg" alt="Marcar como lida">
                           Marcar como lida
                         </a>
-                        <a href="#" class="delete">
+                        <a href="#" class="delete" data-id="4">
                           <img src="/images/trash.svg" alt="Excluir">
                           Excluir
                         </a>
@@ -139,7 +144,7 @@
                         </div>
                     </div>
                     <div class="actions">
-                        <a href="#" class="delete">
+                        <a href="#" class="delete" data-id="1">
                           <img src="/images/trash.svg" alt="Excluir">
                           Excluir
                         </a>
@@ -160,12 +165,12 @@
                   Tem certeza que deseja excluir essa pergunta?
                 </p>
 
-                <form action="#">
+                <form action="#" method="POST">
                     <label for-id="password" class="sr-only">Digite sua Senha</label>
                     <input type="password" name="password" id="password" placeholder="Digite a Senha">
 
                     <div class="buttons">
-                        <div class="button grey">Cancelar</div>
+                        <div class="button grey cancel">Cancelar</div>
                         <button class="red">Sim, Excluir</button>
                     </div>
                 </form>

@@ -1,3 +1,7 @@
+//Formato que o formulário de dentro da Modal tem que passar a informação
+// route.post('/room/:room/:question/:action', (req, res) => res.render())
+
+
 // Rotas para o NodeJs 
 
 const express = require('express')
@@ -10,3 +14,6 @@ route.get('/room', (req, res) => res.render("room"))
 
 
 module.exports = route
+
+
+
