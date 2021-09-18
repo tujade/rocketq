@@ -34,7 +34,7 @@
                     <img src="/images/copy.svg" alt="Copiar número da sala">
                 </div>
                 <div class="buttons">
-                  <a href="#" class="button">
+                  <a href="/create-room" class="button">
                     Criar Sala
                     <img src="/images/users1.svg" alt="Copiar número da sala">
                   </a>
@@ -69,6 +69,11 @@
 
                     <!--QUESTION -->
 
+                    <!--No Question Test -->
+                    <% if (isNoQuestion){ %>
+                      <%- include('parts/noquestion') %>
+                   <% } %> 
+
                     <% questions.forEach(question => { %>
                       <div class="question-wrapper">
                         <div class="question-content">
@@ -93,7 +98,8 @@
 
                    <% }); %>
 
-                    <!--QUESTION DISABLE-->
+                   <!-- Question Disable -->
+
                     <% questionsRead.forEach(questionRead => { %>
 
                       <div class="question-wrapper read">
