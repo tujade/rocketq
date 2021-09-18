@@ -24,3 +24,8 @@ Realizei algumas mudanças no projeto, como cor, organização e comentários ao
 
 ---
 
+## 👩‍💻 Como Usar? 
+
+  1. Clone o reposítório na sua máquina;
+  2. Inicie o NPM com 'npm init'
+  3. Utilize a porta padrão localhost:3000 com o comando 'npm start'
