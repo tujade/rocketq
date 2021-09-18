@@ -1,10 +1,4 @@
-![capa](C:\Projetos\ROCKETQ\public\images\capa.png)
-
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-</p>
-
+![Capa (1)](https://user-images.githubusercontent.com/86531281/133908478-6debe4c0-b1d0-4385-abb8-634237faa575.png)
 
 ## 🚀 Tecnologias
 
